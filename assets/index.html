@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="encabezado">
+        <nav class="navegacion">
+            <a class="navegacion__enlace" href="#presentacion">
+                <h2 class="navegacion__titulo">Informatorio</h2>
+            </a>
+            <ul class="enlaces">
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace" href="#presentacion">Inicio</a>
+                </li>
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace" href="#sobre-mi">Sobre mi</a>
+                </li>
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace" href="#proyectos">Proyectos</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>                
+    <main class="principal">
+        <section class="presentacion" id="presentacion">
+            <div class="presentacion__contenedor_info">
+                <h1 class="presentacion__titulo">Storace Nahuel</h1>
+                <p class="presentacion__parrafo">Futuro desarrollador</p>
+            </div>
+            <div class="presentacion__contenedor_botones">
+                <a href="#sobre-mi" class="boton" role="button">Sobre mi</a>
+                <a href="./docs/CV.pdf" target="_blank" class="boton boton_oscuro" role="button">Descargar CV</a>
+            </div>
+
+        </section>
+        <article class="articulo sobre_mi" id="sobre-mi">
+            <h2 class="articulo__titulo">Un poco sobre mi</h2>
+            <div class="articulo__contenedor_descripciones">
+              <section class="seccion_descripcion">
+                <div class="seccion_descripcion__porta_retrato">
+                  <img
+                    class="seccion_descripcion__imagen"
+                    src="images/yo.jpg"
+                    alt="yo"
+                    title="Foto mia"/>
+                </div>
+                <div
+                  class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+                  aria-label="descripcion personal"
+                >
+                  <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                    Mi historia
+                  </h3>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mi historia"
+                    aria-describedby="mi_historia_titulo"
+                  >
+                    Me llamo Nahuel, nací en Buenos Aires el 05 de mayo de 2006,
+                    actualmente viviendo en La Leonesa - Chaco. Me gusta mucho 
+                    la programación desde muy chiquito y me encantaría dedicarme a 
+                    esto.
+                  </p>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mi historia"
+                    aria-describedby="mi_historia_titulo"
+                  >
+                    Estudié 6 (seis) años en la Escuela de Educación Técnica N°27, 
+                    Francisco Ramon Le Vraux, completando el cursado en 2024 sin
+                     materias adeudadas y recibiendo el correspondiente título con
+                      certificación nacional de "Técnico en equipos e instalaciones electromecánicas".
+                  </p>
+                 
+                </div>
+              </section>
+
+              <section class="seccion_descripcion">
+                <div
+                  class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+                  aria-label="descripcion personal"
+                >
+                  <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
+                    Mis hobbies
+                  </h3>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mis hobbies"
+                    aria-describedby="mis_hobbies_titulo"
+                  >
+                    Además de la programación, tengo un pequeño taller de motos en mi casa. 
+                    Algún dia me gustaría abrir mi propio negocio de repuestos y accesorios
+                    (Cascos, indumentaria, etc)
+                  </p>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mis hobbies"
+                    aria-describedby="mis_hobbies_titulo"
+                  >
+                    Mi sueño es viajar en moto por casi toda Argentina, pero principalmente de Chaco a Ushuaia.
+                    Por eso puedo considerar que mis ganas y esfuerzo por llegar a ser programador se
+                     enfocan en ese viaje, ya que con el hecho de tener una computadora y acceso a internet
+                      podría trabajar desde cualquier parte y así solventar los gastos del viaje
+                  </p>
+                 
+                </div>
+                <div class="seccion_descripcion__porta_retrato">
+                  <img
+                    class="seccion_descripcion__imagen seccion_descripcion__imagen_variante"
+                    src="images/viaje.jpg"
+                    alt="Futuro viaje en moto"
+                    title="Imagen ilustrativa"
+                  />
+                </div>
+              </section>
+            </div>
+          </article>
+
+          <article class="articulo proyectos" id="proyectos">
+            <h2 class="articulo__titulo">Mis proyectos</h2>
+            <div class="contenedor_tarjetas_grid">
+              <article
+                class="tarjeta"
+                aria-label="presentacion de proyecto personal"
+              >
+                <img
+                  class="tarjeta__imagen"
+                  src="./images/taller.jpg"
+                  alt="imagen del proyecto"
+                  title="proyecto 1"
+                />
+                <div class="tarjeta__contenido">
+                  <h3 class="tarjeta__titulo" id="titulo_proyecto_1">Ejemplo de Cooperativa</h3>
+                  <span class="tarjeta__divisor"></span>
+                  <p
+                    class="tarjeta__parrafo scroll scroll_fino"
+                    aria-label="descripcion de proyecto personal"
+                    aria-describedby="titulo_proyecto_1"
+                  >
+                    Pequeño proyecto de la
+                    secundaria. Consistió en crear una Cooperativa "imaginaria"
+                    y esta página fue mi proyecto final. <br>
+                    Continene: <br>
+                    Página principal. <br>
+                    Tienda Online. <br>
+                    Carrito de compras. <br>
+                    Acta consitutiva. <br>
+                    Publicidad. <br>
+                    (Cabe aclarar que fue mi primer proyecto con muy pocos conocimientos,
+                    por lo que existen algunos errores y fallos)
+                  </p>
+                  <a href="./proyectos/Cooperativa/Cooperativa.html" class="boton boton_oscuro" target="_blank"
+                    >Ver proyecto</a
+                  >
+                </div>
+              </article>
+             
+              <article
+                class="tarjeta"
+                aria-label="presentacion de proyecto personal"
+              >
+                <img
+                  class="tarjeta__imagen"
+                  src="./images/homero.png"
+                  alt="imagen del proyecto"
+                  title="proyecto 2"
+                />
+                <div class="tarjeta__contenido">
+                  <h3 class="tarjeta__titulo" id="titulo_proyecto_2">Pensando Proyecto</h3>
+                  <span class="tarjeta__divisor"></span>
+                  <p
+                    class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                    aria-label="descripcion de proyecto personal"
+                    aria-describedby="titulo_proyecto_2"
+                  >
+                    Actualmente me encuentro pensando el siguiente proyecto, aunque...
+                    Tengo una pequeña idea 😉
+                  </p>
+                  <a href="./proyectos/Proyecto2/index.html" class="boton" target="_blank">Ver proyecto</a>
+                </div>
+              </article>
+        </main>
+    
+        <footer class="pie_de_pagina" role="contentinfo">
+          <div class="pie_de_pagina__columna">
+            <h4 class="pie_de_pagina__titulo_columna">Mis redes</h4>
+            <ul class="enlaces enlaces_redes">
+              <li class="enlaces__item">
+                <a
+                  class="enlaces__enlace enlaces__enlace_footer"
+                  href="https://github.com/Nahuel-srce"
+                  target="_blank"
+                  ><img
+                    class="enlaces__icono"
+                    src="./logos/github-logo.png"
+                    alt="logo de github"
+                    title="github"
+                /></a>
+              </li>
+              <li class="enlaces__item">
+                <a
+                  class="enlaces__enlace enlaces__enlace_footer"
+                  href="https://www.instagram.com/nahuu_102"
+                  target="_blank"
+                >
+                  <img
+                    class="enlaces__icono"
+                    src="./logos/instagram-logo.png"
+                    alt="logo de instagram"
+                    title="instagram"
+                  />
+                </a>
+              </li>
+              <li class="enlaces__item">
+                <a
+                  class="enlaces__enlace enlaces__enlace_footer"
+                  href="https://www.facebook.com/share/18sdUaodkL/"
+                  target="_blank"
+                  ><img
+                    class="enlaces__icono"
+                    src="./logos/facebook-logo.png"
+                    alt="logo de Facebook"
+                    title="Facebook"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="pie_de_pagina__columna">
+            <h4 class="pie_de_pagina__titulo_columna">Contactame</h4>
+            <ul class="enlaces enlaces_vertical">
+              <li class="enlaces__item">
+                <a
+                  class="enlaces__enlace enlaces__enlace_footer"
+                  href="mailto:mail@mail.com"
+                  target="_blank"
+                  >Mail: nstorace05@gmail.com</a
+                >
+              </li>
+            </ul> 
+          </div>
+          <div class="pie_de_pagina__columna" role="navigation">
+            <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
+            <ul class="enlaces enlaces_vertical">
+              <li class="enlaces__item">
+                <a
+                  class="enlaces__enlace enlaces__enlace_footer"
+                  href="#presentacion"
+                  >Inicio</a
+                >
+              </li>
+              <li class="enlaces__item">
+                <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi"
+                  >Sobre mi</a
+                >
+              </li>
+              <li class="enlaces__item">
+                <a class="enlaces__enlace enlaces__enlace_footer" href="#proyectos"
+                  >Proyectos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="pie_de_pagina__copyright">
+            <p>©️Copyright 2025</p>
+          </div>
+        </footer>
+
+    </main>
+</body>
+</html>
